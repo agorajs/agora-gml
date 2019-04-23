@@ -8,5 +8,14 @@
     "@types/lodash": "^4.14.116",
     "agora-graph": "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git",
     "lodash": "^4.17.11"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "prettier-tslint": "^0.4.0",
+    "prettier": "^1.17.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
   }
 }
