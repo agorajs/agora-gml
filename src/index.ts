@@ -62,7 +62,7 @@ function pair(
   list: string[],
   index: number
 ): number {
-  const key = list[index];
+  const key = list[index].toLowerCase();
   const val = list[++index];
   let value;
 

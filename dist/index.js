@@ -22,7 +22,7 @@ function gml(data) {
 }
 exports.gml = gml;
 function pair(tree, list, index) {
-    var key = list[index];
+    var key = list[index].toLowerCase();
     var val = list[++index];
     var value;
     if (val === ARRAY) {
