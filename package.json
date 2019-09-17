@@ -2,19 +2,19 @@
   "name": "agora-gml",
   "version": "0.1.1",
   "main": "dist/index.js",
-  "author": "\"Fati CHEN\" <chen@lirmm.fr>",
+  "author": "Fati CHEN <chen@lirmm.fr>",
   "license": "MIT",
   "dependencies": {
     "@types/lodash": "^4.14.116",
-    "agora-graph": "git+ssh://git@gite.lirmm.fr:chen/agora-graph.git#semver:^0.1.0",
-    "lodash": "^4.17.11"
+    "agora-graph": "https://github.com/agorajs/agora-graph.git#semver:^1.0.0",
+    "lodash": "^4.17.15"
   },
   "scripts": {
     "build": "tsc"
   },
   "devDependencies": {
-    "prettier-tslint": "^0.4.0",
     "prettier": "^1.17.0",
+    "prettier-tslint": "^0.4.0",
     "tslint": "^5.11.0",
     "typescript": "^3.1.3"
   }
