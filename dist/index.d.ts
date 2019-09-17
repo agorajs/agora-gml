@@ -30,6 +30,6 @@ interface GMLGraph extends Global {
 interface GML {
     graph?: GMLGraph;
 }
-export declare function gml(data: string): GML;
-export default function toGraph(gml: GML): Graph;
+export declare function parseGML(data: string): GML;
+export declare function toGraph(gml: GML): Graph;
 export {};
