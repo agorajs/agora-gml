@@ -46,7 +46,7 @@ interface GML {
   graph?: GMLGraph;
 }
 
-export function gml(data: string): GML {
+export function parseGML(data: string): GML {
   const list = split(data.trim());
   const graph: GML = {};
 
@@ -139,20 +139,36 @@ function split(str: string): string[] {
   return list;
 }
 
-export default function toGraph(gml: GML): Graph {
-  if (gml.graph === undefined) throw 'GML has no graph attribute';
+export function toGraph(gml: GML): Graph {
+  if (gml.graph === undefined) throw new Error('GML has no graph attribute');
+  const { graph, ...rest } = gml;
   return {
-    edges: _.map(gml.graph.edge, e => ({
-      source: e.source,
-      target: e.target
+    edges: _.map(graph.edge, ({ source, target, ...rest }) => ({
+      source,
+      target,
+      meta: { ...rest }
     })),
-    nodes: _.map(gml.graph.node, n => ({
-      index: n.id,
-      label: '' + n.label,
-      x: n.graphics ? n.graphics.x || 0 : 0,
-      y: n.graphics ? n.graphics.y || 0 : 0,
-      width: n.graphics ? n.graphics.w || 0 : 0,
-      height: n.graphics ? n.graphics.h || 0 : 0
-    }))
+    nodes: _.map(
+      graph.node,
+      ({
+        id: index,
+        label,
+        graphics: { x = 0, y = 0, w: width = 0, h: height = 0 } = {
+          x: 0,
+          y: 0,
+          w: 0,
+          h: 0
+        },
+        ...rest
+      }) => ({
+        index,
+        label: label || '' + index,
+        x,
+        y,
+        width,
+        height,
+        meta: { ...rest }
+      })
+    )
   };
 }
