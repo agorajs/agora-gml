@@ -15,8 +15,10 @@ var __rest = (this && this.__rest) || function (s, e) {
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
         t[p] = s[p];
     if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-            t[p[i]] = s[p[i]];
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
     return t;
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
@@ -139,8 +141,8 @@ function graphToGMLObject(jsGraph) {
     // mapping nodes
     var node = lodash_1.default.map(nodes, function (_a) {
         var id = _a.index, label = _a.label, _b = _a.meta, _c = _b === void 0 ? { _graphics: {} } : _b, _graphics = _c._graphics, meta = __rest(_c, ["_graphics"]), x = _a.x, y = _a.y, w = _a.width, h = _a.height;
-        return (__assign({ id: id,
-            label: label }, meta, { graphics: __assign({}, _graphics, { x: x, y: y, w: w, h: h }) }));
+        return (__assign(__assign({ id: id,
+            label: label }, meta), { graphics: __assign(__assign({}, _graphics), { x: x, y: y, w: w, h: h }) }));
     });
     // mapping edges
     var edge = lodash_1.default.map(edges, function (_a) {
@@ -149,9 +151,9 @@ function graphToGMLObject(jsGraph) {
             target: target }, meta));
     });
     // building graph
-    var graph = __assign({}, graphMeta, { node: node, edge: edge });
+    var graph = __assign(__assign({}, graphMeta), { node: node, edge: edge });
     // building final structure
-    var gml = __assign({}, _global, { graph: graph });
+    var gml = __assign(__assign({}, _global), { graph: graph });
     return gml;
 }
 function toGMLObject(jsGraph) {
