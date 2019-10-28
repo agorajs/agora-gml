@@ -1,0 +1,657 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.d.ts": {
+        "version": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0",
+        "signature": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88",
+        "signature": "c8665e66018917580e71792b91022bcaf53fb946fab4aaf8dfb0738ed564db88"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376",
+        "signature": "6994c583b66862deca24d7bbf77297d95b9d3da8160dbd9beef6b847cf7c1376"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts": {
+        "version": "33d732ce8bb1df6ac0ecf276a787eebe950ec81dc513bb2e9b7f15e0007ece56",
+        "signature": "33d732ce8bb1df6ac0ecf276a787eebe950ec81dc513bb2e9b7f15e0007ece56"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts": {
+        "version": "a6160d1f14b84c8e94c6d796cd2fd5b91770823a4228beef6e195fc3756f193a",
+        "signature": "a6160d1f14b84c8e94c6d796cd2fd5b91770823a4228beef6e195fc3756f193a"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts": {
+        "version": "3633350fb1c82fc92e90de60d184e063687755f8a52aef22cd2cb469be4565fe",
+        "signature": "3633350fb1c82fc92e90de60d184e063687755f8a52aef22cd2cb469be4565fe"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts": {
+        "version": "9754d86bab02acc47fe9358bdc92bfeb83dd89afb17853f0fd5039eb12175e9c",
+        "signature": "9754d86bab02acc47fe9358bdc92bfeb83dd89afb17853f0fd5039eb12175e9c"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts": {
+        "version": "9752ac813a032e555a272c5e50ee72fb67507cd01d8bffe603f8933fca208646",
+        "signature": "9752ac813a032e555a272c5e50ee72fb67507cd01d8bffe603f8933fca208646"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts": {
+        "version": "0ea48150cb3d1840269cff8b7fdc934c56e156bd021a131f6ff5f9048ee8cdb1",
+        "signature": "0ea48150cb3d1840269cff8b7fdc934c56e156bd021a131f6ff5f9048ee8cdb1"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts": {
+        "version": "90028408ebb861f1d6a8150a76f3d1aef51f59ca83325c8ab8260d7700a2b9f4",
+        "signature": "90028408ebb861f1d6a8150a76f3d1aef51f59ca83325c8ab8260d7700a2b9f4"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts": {
+        "version": "d82ced2b485f0a16cfee650f9cefb10bc7ef5975dfa5ee89798a745b72e7f5da",
+        "signature": "d82ced2b485f0a16cfee650f9cefb10bc7ef5975dfa5ee89798a745b72e7f5da"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts": {
+        "version": "26e34154f76fc08f5d84a6ec62f8375b2a62727981f55724e30215e498d79c94",
+        "signature": "26e34154f76fc08f5d84a6ec62f8375b2a62727981f55724e30215e498d79c94"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts": {
+        "version": "e270a2a150a60944039251fe950c1392668fc12d753a36eb2276a219f4149e5a",
+        "signature": "e270a2a150a60944039251fe950c1392668fc12d753a36eb2276a219f4149e5a"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts": {
+        "version": "c279c429af90f94e2dc3b3a9fc69a3e4bb08bde7cac9ed981e11d5eca488d7c3",
+        "signature": "c279c429af90f94e2dc3b3a9fc69a3e4bb08bde7cac9ed981e11d5eca488d7c3"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts": {
+        "version": "ba50538c39628dcf8bec7df5d35d80b399367d95b954c2822cd09af181bcbee6",
+        "signature": "ba50538c39628dcf8bec7df5d35d80b399367d95b954c2822cd09af181bcbee6"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts": {
+        "version": "09f5e8c7a783e31f426e671551efdfbd3633c577058cf414d2a97d0b823f6120",
+        "signature": "09f5e8c7a783e31f426e671551efdfbd3633c577058cf414d2a97d0b823f6120"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
+        "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
+        "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts": {
+        "version": "c21830111d49a5cd7a9f384370db5b41c659d045fe920bcac1cc9f507c88125d",
+        "signature": "c21830111d49a5cd7a9f384370db5b41c659d045fe920bcac1cc9f507c88125d"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
+        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts": {
+        "version": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096",
+        "signature": "035b95793288bf4457a2b80bfe9b7500a29324ad62adcf9991277198e8833096"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
+        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts": {
+        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts": {
+        "version": "c95aec6e01c1b18c75c09d18767352761c00394e4864d4b7dd29386a1728eae9",
+        "signature": "c95aec6e01c1b18c75c09d18767352761c00394e4864d4b7dd29386a1728eae9"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts": {
+        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts": {
+        "version": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67",
+        "signature": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts": {
+        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d"
+      },
+      "c:/users/chen/documents/agora/agora-gml/src/index.ts": {
+        "version": "c521e637f0ff7b418ea76f59c2fe6a678f063de3079345f9aad9cdd4c1f2c13c",
+        "signature": "d13e9d42cdb2dc50a7ce6dcd23cdcd90db127f869101c710b479135af43fae56"
+      },
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/delaunator/index.d.ts": {
+        "version": "89345c88252e93061f49cbed4b1fb032b10a2fddf05ff03c01d569f1e772a513",
+        "signature": "89345c88252e93061f49cbed4b1fb032b10a2fddf05ff03c01d569f1e772a513"
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 1,
+      "module": 1,
+      "declaration": true,
+      "outDir": "C:/Users/chen/Documents/agora/agora-gml/dist",
+      "strict": true,
+      "esModuleInterop": true,
+      "configFilePath": "C:/Users/chen/Documents/agora/agora-gml/tsconfig.json"
+    },
+    "referencedMap": {
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/src/index.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/src/index.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ],
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/graph.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/algorithm.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/box.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/conversion.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/cropped.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/delaunay-edges.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/distance.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/node-map.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/overlap.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/point.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/scale.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/vector.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/agora-graph/dist/index.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/lodash/ts3.1/index.d.ts",
+      "c:/users/chen/documents/agora/agora-gml/src/index.ts",
+      "c:/users/chen/documents/agora/agora-gml/node_modules/@types/delaunator/index.d.ts"
+    ]
+  },
+  "version": "3.4.4"
+}

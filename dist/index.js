@@ -31,16 +31,9 @@ var TEXT = '"';
 var ARRAY = '[';
 var END_ARRAY = ']';
 var IGNORE = '\\';
-function parseGML(data) {
-    var list = split(data.trim());
-    var graph = {};
-    var index = 0;
-    while (index < list.length) {
-        index = pair(graph, list, index);
-    }
-    return graph;
+function isGraph(graph) {
+    return (graph.edges !== undefined && graph.nodes !== undefined);
 }
-exports.parseGML = parseGML;
 function pair(tree, list, index) {
     var key = list[index].toLowerCase();
     var val = list[++index];
@@ -116,26 +109,83 @@ function split(str) {
     }
     return list;
 }
+function gmlify(key, value, padding) {
+    if (padding === void 0) { padding = ''; }
+    var aggregated = '';
+    if (Array.isArray(value))
+        return lodash_1.default.reduce(value, function (result, iter) { return result + gmlify(key, iter, padding); }, '');
+    else if (typeof value === 'object') {
+        aggregated = '[\n';
+        // iterate over object
+        aggregated += lodash_1.default.reduce(value, function (acc, value, key) { return acc + gmlify(key, value, padding + '  '); }, '');
+        aggregated += padding + ']';
+    }
+    else
+        aggregated = JSON.stringify(value);
+    return padding + key + ' ' + aggregated + '\n';
+}
+function stringToGMLObject(data) {
+    var list = split(data.trim());
+    var graph = {};
+    var index = 0;
+    while (index < list.length) {
+        index = pair(graph, list, index);
+    }
+    return graph;
+}
+function graphToGMLObject(jsGraph) {
+    // unweaving
+    var nodes = jsGraph.nodes, edges = jsGraph.edges, _a = jsGraph.meta, _b = _a === void 0 ? { _global: {} } : _a, _global = _b._global, graphMeta = __rest(_b, ["_global"]);
+    // mapping nodes
+    var node = lodash_1.default.map(nodes, function (_a) {
+        var id = _a.index, label = _a.label, _b = _a.meta, _c = _b === void 0 ? { _graphics: {} } : _b, _graphics = _c._graphics, meta = __rest(_c, ["_graphics"]), x = _a.x, y = _a.y, w = _a.width, h = _a.height;
+        return (__assign({ id: id,
+            label: label }, meta, { graphics: __assign({}, _graphics, { x: x, y: y, w: w, h: h }) }));
+    });
+    // mapping edges
+    var edge = lodash_1.default.map(edges, function (_a) {
+        var source = _a.source, target = _a.target, meta = _a.meta;
+        return (__assign({ source: source,
+            target: target }, meta));
+    });
+    // building graph
+    var graph = __assign({}, graphMeta, { node: node, edge: edge });
+    // building final structure
+    var gml = __assign({}, _global, { graph: graph });
+    return gml;
+}
+function toGMLObject(jsGraph) {
+    if (typeof jsGraph === 'string') {
+        return stringToGMLObject(jsGraph);
+    }
+    return graphToGMLObject(jsGraph);
+}
+exports.toGMLObject = toGMLObject;
 function toGraph(gml) {
+    if (typeof gml === 'string') {
+        return toGraph(stringToGMLObject(gml));
+    }
     if (gml.graph === undefined)
         throw new Error('GML has no graph attribute');
-    var graph = gml.graph, rest = __rest(gml, ["graph"]);
+    // putting _global meta
+    var graph = gml.graph, _global = __rest(gml, ["graph"]);
+    var node = graph.node, edge = graph.edge, meta = __rest(graph, ["node", "edge"]);
     return {
-        edges: lodash_1.default.map(graph.edge, function (_a) {
-            var source = _a.source, target = _a.target, rest = __rest(_a, ["source", "target"]);
+        edges: lodash_1.default.map(edge, function (_a) {
+            var source = _a.source, target = _a.target, meta = __rest(_a, ["source", "target"]);
             return ({
                 source: source,
                 target: target,
-                meta: __assign({}, rest)
+                meta: meta
             });
         }),
-        nodes: lodash_1.default.map(graph.node, function (_a) {
+        nodes: lodash_1.default.map(node, function (_a) {
             var index = _a.id, label = _a.label, _b = _a.graphics, _c = _b === void 0 ? {
                 x: 0,
                 y: 0,
                 w: 0,
                 h: 0
-            } : _b, _d = _c.x, x = _d === void 0 ? 0 : _d, _e = _c.y, y = _e === void 0 ? 0 : _e, _f = _c.w, width = _f === void 0 ? 0 : _f, _g = _c.h, height = _g === void 0 ? 0 : _g, rest = __rest(_a, ["id", "label", "graphics"]);
+            } : _b, _d = _c.x, x = _d === void 0 ? 0 : _d, _e = _c.y, y = _e === void 0 ? 0 : _e, _f = _c.w, width = _f === void 0 ? 0 : _f, _g = _c.h, height = _g === void 0 ? 0 : _g, _graphics = __rest(_c, ["x", "y", "w", "h"]), meta = __rest(_a, ["id", "label", "graphics"]);
             return ({
                 index: index,
                 label: label || '' + index,
@@ -143,9 +193,17 @@ function toGraph(gml) {
                 y: y,
                 width: width,
                 height: height,
-                meta: __assign({}, rest)
+                meta: __assign({ _graphics: _graphics }, meta)
             });
-        })
+        }),
+        meta: __assign({ _global: _global }, meta)
     };
 }
 exports.toGraph = toGraph;
+function toGML(graph) {
+    if (isGraph(graph))
+        return toGML(graphToGMLObject(graph));
+    // we need to layout an object
+    return lodash_1.default.reduce(graph, function (acc, value, key) { return acc + gmlify(key, value); }, '');
+}
+exports.toGML = toGML;

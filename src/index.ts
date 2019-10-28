@@ -9,6 +9,12 @@ const ARRAY = '[';
 const END_ARRAY = ']';
 const IGNORE = '\\';
 
+function isGraph(graph: object): graph is Graph {
+  return (
+    (graph as Graph).edges !== undefined && (graph as Graph).nodes !== undefined
+  );
+}
+
 interface Global {
   id?: number;
   label?: string;
@@ -44,17 +50,6 @@ interface GMLGraph extends Global {
 
 interface GML {
   graph?: GMLGraph;
-}
-
-export function parseGML(data: string): GML {
-  const list = split(data.trim());
-  const graph: GML = {};
-
-  let index = 0;
-  while (index < list.length) {
-    index = pair(graph, list, index);
-  }
-  return graph;
 }
 
 function pair(
@@ -139,27 +134,124 @@ function split(str: string): string[] {
   return list;
 }
 
-export function toGraph(gml: GML): Graph {
+function gmlify(key: string, value: any, padding = ''): string {
+  let aggregated = '';
+  if (Array.isArray(value))
+    return _.reduce(
+      value,
+      (result, iter) => result + gmlify(key, iter, padding),
+      ''
+    );
+  else if (typeof value === 'object') {
+    aggregated = '[\n';
+    // iterate over object
+    aggregated += _.reduce(
+      value,
+      (acc, value, key) => acc + gmlify(key, value, padding + '  '),
+      ''
+    );
+    aggregated += padding + ']';
+  } else aggregated = JSON.stringify(value);
+
+  return padding + key + ' ' + aggregated + '\n';
+}
+
+function stringToGMLObject(data: string): GML {
+  const list = split(data.trim());
+  const graph: GML = {};
+
+  let index = 0;
+  while (index < list.length) {
+    index = pair(graph, list, index);
+  }
+  return graph;
+}
+
+function graphToGMLObject(jsGraph: Graph): GML {
+  // unweaving
+  const {
+    nodes,
+    edges,
+    meta: { _global, ...graphMeta } = { _global: {} }
+  } = jsGraph;
+
+  // mapping nodes
+  const node = _.map(
+    nodes,
+    ({
+      index: id,
+      label,
+      meta: { _graphics, ...meta } = { _graphics: {} },
+      x,
+      y,
+      width: w,
+      height: h
+    }) => ({
+      id,
+      label,
+      ...meta,
+      graphics: { ..._graphics, x, y, w, h }
+    })
+  );
+
+  // mapping edges
+  const edge = _.map(edges, ({ source, target, meta }) => ({
+    source,
+    target,
+    ...meta
+  }));
+
+  // building graph
+  const graph = { ...graphMeta, node, edge };
+
+  // building final structure
+  const gml = { ..._global, graph };
+  return gml;
+}
+
+export function toGMLObject(jsGraph: Graph | string): GML {
+  if (typeof jsGraph === 'string') {
+    return stringToGMLObject(jsGraph);
+  }
+
+  return graphToGMLObject(jsGraph);
+}
+
+export function toGraph(gml: GML | string): Graph {
+  if (typeof gml === 'string') {
+    return toGraph(stringToGMLObject(gml));
+  }
+
   if (gml.graph === undefined) throw new Error('GML has no graph attribute');
-  const { graph, ...rest } = gml;
+
+  // putting _global meta
+  const { graph, ..._global } = gml;
+  const { node, edge, ...meta } = graph;
+
   return {
-    edges: _.map(graph.edge, ({ source, target, ...rest }) => ({
+    edges: _.map(edge, ({ source, target, ...meta }) => ({
       source,
       target,
-      meta: { ...rest }
+      meta
     })),
     nodes: _.map(
-      graph.node,
+      node,
       ({
         id: index,
         label,
-        graphics: { x = 0, y = 0, w: width = 0, h: height = 0 } = {
+        graphics: {
+          x = 0,
+          y = 0,
+          w: width = 0,
+          h: height = 0,
+          ..._graphics
+        } = {
           x: 0,
           y: 0,
           w: 0,
           h: 0
         },
-        ...rest
+        ...meta
       }) => ({
         index,
         label: label || '' + index,
@@ -167,8 +259,16 @@ export function toGraph(gml: GML): Graph {
         y,
         width,
         height,
-        meta: { ...rest }
+        meta: { _graphics, ...meta }
       })
-    )
+    ),
+    meta: { _global, ...meta }
   };
+}
+
+export function toGML(graph: Graph | GML): string {
+  if (isGraph(graph)) return toGML(graphToGMLObject(graph));
+
+  // we need to layout an object
+  return _.reduce(graph, (acc, value, key) => acc + gmlify(key, value), '');
 }
