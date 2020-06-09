@@ -1,4 +1,4 @@
-import { Graph } from 'agora-graph';
+import type { Graph } from 'agora-graph';
 import _ from 'lodash';
 
 const NODE = 'node';
@@ -172,7 +172,7 @@ function graphToGMLObject(jsGraph: Graph): GML {
   const {
     nodes,
     edges,
-    meta: { _global, ...graphMeta } = { _global: {} }
+    meta: { _global, ...graphMeta } = { _global: {} },
   } = jsGraph;
 
   // mapping nodes
@@ -185,12 +185,12 @@ function graphToGMLObject(jsGraph: Graph): GML {
       x,
       y,
       width: w,
-      height: h
+      height: h,
     }) => ({
       id,
       label,
       ...meta,
-      graphics: { ..._graphics, x, y, w, h }
+      graphics: { ..._graphics, x, y, w, h },
     })
   );
 
@@ -198,7 +198,7 @@ function graphToGMLObject(jsGraph: Graph): GML {
   const edge = _.map(edges, ({ source, target, meta }) => ({
     source,
     target,
-    ...meta
+    ...meta,
   }));
 
   // building graph
@@ -232,7 +232,7 @@ export function toGraph(gml: GML | string): Graph {
     edges: _.map(edge, ({ source, target, ...meta }) => ({
       source,
       target,
-      meta
+      meta,
     })),
     nodes: _.map(
       node,
@@ -249,7 +249,7 @@ export function toGraph(gml: GML | string): Graph {
           x: 0,
           y: 0,
           w: 0,
-          h: 0
+          h: 0,
         },
         ...meta
       }) => ({
@@ -259,10 +259,10 @@ export function toGraph(gml: GML | string): Graph {
         y,
         width,
         height,
-        meta: { _graphics, ...meta }
+        meta: { _graphics, ...meta },
       })
     ),
-    meta: { _global, ...meta }
+    meta: { _global, ...meta },
   };
 }
 
